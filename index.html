@@ -157,6 +157,114 @@
                   <span>Напитки</span>
                 </a>
               </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="home-products">
+          <div class="container">
+            <div class="row">
+              <h3 class="all_products">Все товары</h3>
+              <div class="products-wrapper">
+                <div class="product">
+                  <div class="img"></div>
+                  <a class="title" href="#">Голень Говядины</a>
+                  <p class="description">Описание мраморной говядины, состоящее из нескольких преложений. Можно наполнить.</p>
+                  <div class="rating">
+                    <span class="active"></span>
+                    <span class="active"></span>
+                    <span class="active"></span>
+                    <span class="active"></span>
+                    <span></span>
+                  </div>
+                  <div class="price">
+                    <b>1 050 ₽/кг</b> <span>За 500гр.</span>
+                  </div>
+                  <a class="to-cart" href="#">В корзину</a>
+                </div>
+                <div class="product">
+                  <div class="img"></div>
+                  <a class="title" href="#">Голень Говядины</a>
+                  <p class="description">Описание мраморной говядины, состоящее из нескольких преложений. Можно наполнить.</p>
+                  <div class="rating">
+                    <span class="active"></span>
+                    <span class="active"></span>
+                    <span class="active"></span>
+                    <span class="active"></span>
+                    <span></span>
+                  </div>
+                  <div class="price">
+                    <b>1 050 ₽/кг</b> <span>За 500гр.</span>
+                  </div>
+                  <a class="to-cart" href="#">В корзину</a>
+                </div>
+                <div class="product">
+                  <div class="img"></div>
+                  <a class="title" href="#">Голень Говядины</a>
+                  <p class="description">Описание мраморной говядины, состоящее из нескольких преложений. Можно наполнить.</p>
+                  <div class="rating">
+                    <span class="active"></span>
+                    <span class="active"></span>
+                    <span class="active"></span>
+                    <span class="active"></span>
+                    <span></span>
+                  </div>
+                  <div class="price">
+                    <b>1 050 ₽/кг</b> <span>За 500гр.</span>
+                  </div>
+                  <a class="to-cart" href="#">В корзину</a>
+                </div>
+                <div class="product">
+                  <div class="img"></div>
+                  <a class="title" href="#">Голень Говядины</a>
+                  <p class="description">Описание мраморной говядины, состоящее из нескольких преложений. Можно наполнить.</p>
+                  <div class="rating">
+                    <span class="active"></span>
+                    <span class="active"></span>
+                    <span class="active"></span>
+                    <span class="active"></span>
+                    <span></span>
+                  </div>
+                  <div class="price">
+                    <b>1 050 ₽/кг</b> <span>За 500гр.</span>
+                  </div>
+                  <a class="to-cart" href="#">В корзину</a>
+                </div>
+                <div class="product">
+                  <div class="img"></div>
+                  <a class="title" href="#">Голень Говядины</a>
+                  <p class="description">Описание мраморной говядины, состоящее из нескольких преложений. Можно наполнить.</p>
+                  <div class="rating">
+                    <span class="active"></span>
+                    <span class="active"></span>
+                    <span class="active"></span>
+                    <span class="active"></span>
+                    <span></span>
+                  </div>
+                  <div class="price">
+                    <b>1 050 ₽/кг</b> <span>За 500гр.</span>
+                  </div>
+                  <a class="to-cart" href="#">В корзину</a>
+                </div>
+                <div class="product">
+                  <div class="img"></div>
+                  <a class="title" href="#">Голень Говядины</a>
+                  <p class="description">Описание мраморной говядины, состоящее из нескольких преложений. Можно наполнить.</p>
+                  <div class="rating">
+                    <span class="active"></span>
+                    <span class="active"></span>
+                    <span class="active"></span>
+                    <span class="active"></span>
+                    <span></span>
+                  </div>
+                  <div class="price">
+                    <b>1 050 ₽/кг</b> <span>За 500гр.</span>
+                  </div>
+                  <a class="to-cart" href="#">В корзину</a>
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -172,22 +280,34 @@
     <script src="assets/js/app.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.js"></script>
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
     <script>
-    var mySwiper = new Swiper(".mySwiper", {
-      slidesPerView: 1,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true
-      },
-    });
+      var swiper = new Swiper(".mySwiper", {
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
 
+    // var mySwiper = new Swiper(".mySwiper", {
+    //   slidesPerView: 1,
+
+    //   pagination: {
+    //     el: ".swiper-pagination",
+    //     clickable: true
+    //   },
+    // });
+    
     var menuSwiper = new Swiper(".mySwiper-menu", {
-      slidesPerView: 5,
+      slidesPerView: "auto",
       spaceBetween: 95,
-      freeMode: true
+
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
     });
   </script>
   </body>
