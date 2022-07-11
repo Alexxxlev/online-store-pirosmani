@@ -132,6 +132,7 @@
 }
 body {
   font-family: "TT Norms Pro";
+  font-style: normal;
   font-size: 16px;
   color: #333;
 }
@@ -147,7 +148,7 @@ a {
 
 .swiper-pagination-bullet-active {
   width: 35px !important;
-  background: #FFFFFF !important;
+  background: #fff !important;
   border-radius: 9px !important;
 }
 
@@ -246,8 +247,47 @@ a {
   background: url(../images/star-green.svg);
 }
 
+.input_range {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  width: 116.57px;
+  height: 42.47px;
+  background: #FCFCFC;
+  border: 0.903636px solid #EBEBEB;
+  border-radius: 9.03636px;
+  position: relative;
+}
+.input_range:after {
+  content: attr(data-desc);
+  position: absolute;
+  bottom: -18px;
+  right: 0;
+  font-weight: 400;
+  font-size: 9.03636px;
+  line-height: 14px;
+  color: #C6C6C6;
+}
+.input_range span.button {
+  width: 32%;
+  text-align: center;
+  color: #000 !important;
+  cursor: pointer;
+}
+.input_range input {
+  width: 36%;
+  text-align: center;
+  font-weight: 400;
+  font-size: 12.6509px;
+  line-height: 19px;
+  color: #000;
+  border: none;
+  background: none;
+}
+
 header {
-  background: #FFFFFF;
+  background: #fff;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.12);
 }
 header nav {
@@ -259,7 +299,7 @@ header nav .navbar-brand {
 header .dropdown-menu {
   padding: 56px 0 10px;
   margin: 0;
-  background: #FFFFFF;
+  background: #fff;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.12);
   border: none;
   border-radius: 12px;
@@ -740,4 +780,114 @@ footer .footer_bottom a {
   font-size: 28px;
   line-height: 33px;
   color: #000000;
+}
+
+.card {
+  padding: 60px 0;
+  background-color: inherit;
+  border: none;
+}
+
+.card-top {
+  display: flex;
+  justify-content: space-between;
+}
+.card-top .card-img {
+  width: 67%;
+  height: 427px;
+  overflow: hidden;
+  background: #F9F9F9 url(../images/card-bg.png) center no-repeat;
+  border-radius: 15px;
+}
+.card-top .card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.card-top .card-order {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  background: #fff;
+  box-shadow: 0px 0px 27.1091px rgba(0, 0, 0, 0.06);
+  border-radius: 15px;
+}
+.card-top .card-order .title {
+  margin-bottom: 3px;
+  font-weight: 500;
+  font-size: 18.0727px;
+  line-height: 23px;
+  color: #000;
+}
+.card-top .card-order .reviews {
+  margin-bottom: 28px;
+  font-weight: 400;
+  font-size: 12.6509px;
+  line-height: 19px;
+  color: #C6C6C6;
+}
+.card-top .card-order .price {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-top .card-order .price span {
+  font-weight: 500;
+  font-size: 14.4582px;
+  line-height: 22px;
+  color: #C6C6C6;
+}
+.card-top .card-order .price b {
+  font-weight: 500;
+  font-size: 18.0727px;
+  line-height: 23px;
+  color: #000;
+}
+.card-top .card-order .pay-bottom {
+  margin-top: 30px;
+}
+.card-top .card-order .pay-bottom .to-pay {
+  margin-bottom: 18px;
+  display: flex;
+  justify-content: space-between;
+}
+.card-top .card-order .pay-bottom .to-pay span {
+  font-weight: 500;
+  font-size: 14.4582px;
+  line-height: 22px;
+  color: #000;
+}
+.card-top .card-order .pay-bottom .to-pay b {
+  font-weight: 500;
+  font-size: 18.0727px;
+  line-height: 23px;
+  color: #00AC4E;
+}
+.card-top .card-order .pay-bottom .pay-block {
+  display: flex;
+  justify-content: space-between;
+}
+.card-top .card-order .pay-bottom .pay-block .pay-popup {
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  font-weight: 500;
+  font-size: 18.0727px;
+  line-height: 23px;
+  color: #fff;
+  background: #00AC4E;
+  border: none;
+  border-radius: 5px;
+}
+.card-top .card-order .pay-bottom .pay-block .cart-add {
+  width: 49px;
+  height: 40px;
+  background: #00AC4E url(../images/btn-cart.svg) center no-repeat;
+  border: none;
+  border-radius: 5px;
 }

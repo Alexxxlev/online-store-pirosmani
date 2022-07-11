@@ -155,6 +155,10 @@ body {
     color: #333;
 }
 
+a {
+    text-decoration: none;
+}
+
 .swiper-pagination-bullet {
     background: #C4C4C4 !important;
     opacity: 1 !important;
@@ -167,6 +171,116 @@ body {
 }
 
 /* blocks */
+.mr-60 {
+    margin-right: 60px;
+}
+
+.mt-45 {
+    margin-top: 45px;
+}
+
+.green_btn {
+    padding: 14px 38px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 21px;
+    color: #FFFFFF;
+    text-align: center;
+    background: #00AC4E;
+    border-radius: 7px;
+}
+
+.green_btn:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.default_btn {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-weight: 400;
+    font-size: 22.2162px;
+    line-height: 29px;
+    color: #00AC4E;
+    text-align: center;
+}
+
+.default_btn img {
+    margin-left: 9px;
+    position: relative;
+    top: 1px;
+}
+
+.default_btn:hover {
+    text-decoration: none;
+    color: #00AC4E;
+}
+
+.form-support {
+    width: 672px;
+}
+
+.form-support textarea {
+    margin-bottom: 25px;
+    padding: 20px;
+    width: 100%;
+    height: 174px;
+    font-family: "TT Hoves";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 21px;
+    color: #BDBDBD;
+    background: #F9F9F9;
+    border: none;
+    border-radius: 5px;
+    resize: none;
+}
+
+.form-support button {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 189.23px;
+    height: 60px;
+    background: #00AC4E;
+    border: none;
+    border-radius: 7.8169px;
+    font-weight: 500;
+    font-size: 18.7606px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.rating {
+    margin-bottom: 10px;
+}
+
+.rating span {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background: url(../images/star.svg);
+}
+
+.rating span.active {
+    background: url(../images/star-green.svg);
+}
+
 header {
     background: #FFFFFF;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.12);
@@ -208,6 +322,10 @@ header .dropdown-menu .dropdown-item span {
     display: inline-block;
     width: 20px;
     text-align: center;
+}
+
+header .navbar-light .navbar-nav .nav-item.active .nav-link {
+    color: #00AC4E;
 }
 
 header .navbar-light .navbar-nav .nav-item.dropdown a {
@@ -442,21 +560,6 @@ header .menu-right .menu-user button {
     color: #000000;
 }
 
-.home-products .products-wrapper .product .rating {
-    margin-bottom: 10px;
-}
-
-.home-products .products-wrapper .product .rating span {
-    display: inline-block;
-    width: 13px;
-    height: 13px;
-    background: url(../images/star.svg);
-}
-
-.home-products .products-wrapper .product .rating span.active {
-    background: url(../images/star-green.svg);
-}
-
 .home-products .products-wrapper .product .price {
     margin-bottom: 13px;
 }
@@ -557,11 +660,11 @@ header .menu-right .menu-user button {
     cursor: pointer;
 }
 
-.delivery {
+.banner-delivery {
     padding-bottom: 60px;
 }
 
-.delivery .block {
+.banner-delivery .block {
     padding: 30px 0 40px 30px;
     width: 100%;
     height: 254px;
@@ -570,7 +673,7 @@ header .menu-right .menu-user button {
     border-radius: 18.0727px;
 }
 
-.delivery .block .title {
+.banner-delivery .block .title {
     margin-bottom: 35px;
     font-family: "TT Norms Pro";
     font-style: normal;
@@ -580,7 +683,7 @@ header .menu-right .menu-user button {
     color: #333333;
 }
 
-.delivery .block a {
+.banner-delivery .block a {
     display: block;
     width: 171px;
     height: 53px;
@@ -720,4 +823,57 @@ footer .footer_bottom a {
     margin-left: 34px;
     color: #FFFFFF;
     text-decoration: none;
+}
+
+.delivery-content {
+    padding: 45px 0 60px;
+}
+
+.delivery-content h1 {
+    margin-bottom: 25px;
+    font-family: "TT Hoves";
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 33px;
+    color: #000000;
+}
+
+.delivery-content p {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    color: #828282;
+}
+
+.payment-content {
+    padding: 45px 0 60px;
+}
+
+.payment-content h1 {
+    margin-bottom: 25px;
+    font-family: "TT Hoves";
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 33px;
+    color: #000000;
+}
+
+.payment-content p {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    color: #828282;
+}
+
+.booking-content {
+    padding: 45px 0 60px;
+}
+
+.booking-content h1 {
+    margin-bottom: 25px;
+    font-family: "TT Hoves";
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 33px;
+    color: #000000;
 }
