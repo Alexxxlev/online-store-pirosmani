@@ -625,6 +625,16 @@
         },
       });
 
+      var swiperReviews = new Swiper(".slider-reviews", {
+        slidesPerView: 2,
+        spaceBetween: 16,
+    
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+
       /* input +- */
       jQuery(function() {
         var j = jQuery;
