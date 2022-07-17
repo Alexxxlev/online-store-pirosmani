@@ -236,6 +236,7 @@ a {
 
 .rating {
   margin-bottom: 10px;
+  display: flex;
 }
 .rating span {
   display: inline-block;
@@ -245,6 +246,20 @@ a {
 }
 .rating span.active {
   background: url(../images/star-green.svg);
+}
+
+.rating-min {
+  margin-bottom: 4px;
+}
+.rating-min span {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background: url(../images/star.svg);
+}
+.rating-min span.active {
+  background: url(../images/star-green.svg);
+  background-size: cover;
 }
 
 .input_range {
@@ -478,6 +493,10 @@ header .menu-right .menu-user button {
 }
 .home-products .all_products {
   margin-bottom: 40px;
+  font-weight: 500;
+  font-size: 27.1585px;
+  line-height: 19px;
+  color: #000;
 }
 .home-products .products-wrapper {
   display: flex;
@@ -761,7 +780,7 @@ footer .footer_bottom a {
   font-weight: 500;
   font-size: 28px;
   line-height: 33px;
-  color: #000000;
+  color: #000;
 }
 .payment-content p {
   font-weight: 400;
@@ -774,12 +793,12 @@ footer .footer_bottom a {
   padding: 45px 0 60px;
 }
 .booking-content h1 {
-  margin-bottom: 25px;
+  margin-bottom: 45px;
   font-family: "TT Hoves";
   font-weight: 500;
   font-size: 28px;
   line-height: 33px;
-  color: #000000;
+  color: #000;
 }
 
 .card {
@@ -814,7 +833,7 @@ footer .footer_bottom a {
   border-radius: 15px;
 }
 .card-top .card-sidebar .title {
-  margin-bottom: 3px;
+  margin-bottom: 6px;
   font-weight: 500;
   font-size: 18.0727px;
   line-height: 23px;
@@ -949,14 +968,6 @@ footer .footer_bottom a {
 .card-bottom .card-info .tab-content .product_ul li b {
   font-weight: 500;
 }
-.card-bottom .card-info .tab-content .slider-reviews {
-  position: relative;
-  overflow: hidden;
-}
-.card-bottom .card-info .tab-content .slider-reviews .swiper-wrapper .swiper-slide {
-  background: rgba(242, 242, 242, 0.75);
-  border-radius: 11px;
-}
 .card-bottom .card-sidebar {
   padding: 30px;
   width: 30%;
@@ -1052,4 +1063,118 @@ footer .footer_bottom a {
   line-height: 10px;
   color: #000;
   text-align: center;
+}
+
+.slider-reviews {
+  padding-right: 77px;
+  position: relative;
+  overflow: hidden;
+}
+.slider-reviews:before {
+  content: "";
+  width: 77px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  background: #fff;
+}
+.slider-reviews .swiper-wrapper .swiper-slide {
+  padding: 15px;
+  background: rgba(242, 242, 242, 0.75);
+  border-radius: 11px;
+}
+.slider-reviews .swiper-wrapper .swiper-slide .rev_header {
+  margin-bottom: 6px;
+  display: flex;
+}
+.slider-reviews .swiper-wrapper .swiper-slide .rev_header .avatar {
+  margin-right: 5px;
+  width: 50px;
+  height: 50px;
+}
+.slider-reviews .swiper-wrapper .swiper-slide .rev_header .avatar img {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #F2C94C;
+  border-radius: 50%;
+}
+.slider-reviews .swiper-wrapper .swiper-slide .rev_header .rev_avatar {
+  display: flex;
+  flex-direction: column;
+}
+.slider-reviews .swiper-wrapper .swiper-slide .rev_header .rev_avatar .rev_name {
+  margin-bottom: 3px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000;
+}
+.slider-reviews .swiper-wrapper .swiper-slide .rev_header .rev_avatar .rev_name img {
+  margin-left: 8px;
+}
+.slider-reviews .swiper-wrapper .swiper-slide .rev_header .rev_avatar .rev_social {
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 11px;
+  text-decoration-line: underline;
+  color: #2D9CDB;
+}
+.slider-reviews .swiper-wrapper .swiper-slide .rev_footer p {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 13px;
+  color: #000;
+}
+.slider-reviews .swiper-wrapper .swiper-slide .rev_footer a {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  text-decoration-line: underline;
+  color: #00AC4E;
+}
+.slider-reviews .swiper-button-next {
+  padding-right: 6px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #00AC4E;
+}
+.slider-reviews .swiper-button-next:after {
+  content: "";
+}
+.slider-reviews .swiper-button-next span {
+  margin-right: 6px;
+}
+
+.vacancy-content {
+  padding: 45px 0 60px;
+}
+.vacancy-content h1 {
+  margin-bottom: 45px;
+  font-family: "TT Hoves";
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 33px;
+  color: #000;
+}
+.vacancy-content .vacancy-human {
+  margin-bottom: 30px;
+}
+.vacancy-content .vacancy-human h2 {
+  margin-bottom: 25px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000;
+}
+.vacancy-content .vacancy-human p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #828282;
+}
+.vacancy-content .vacancy-human p span {
+  color: #333;
 }
