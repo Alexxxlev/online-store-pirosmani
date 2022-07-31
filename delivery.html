@@ -58,7 +58,7 @@
                             <a class="nav-link" href="payment.html">Оплата</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="booking.html">Бронь стола</a>
+                          <button class="nav-link" data-toggle="modal" data-target="#booking">Бронь стола</button>
                         </li>
                       </ul> 
                     </div>
@@ -71,7 +71,7 @@
                         </a>
                       </div>
                       <div class="menu-user">
-                        <button class="profile">
+                        <button class="profile" data-toggle="modal" data-target="#login">
                           <img src="assets/images/person.svg" alt="">
                         </button>
                         <a href="#" class="cart">
@@ -120,7 +120,7 @@
                   <div class="work-email">
                     <a href="mailto:info@.ru">Email: info@.ru</a>
                   </div>
-                  <a class="site-help" href="#">Поддержка</a>
+                  <a class="site-help" href="support.html">Поддержка</a>
                 </div>
                 <div class="footer-center">
                   <div class="social">
@@ -143,6 +143,66 @@
           </footer>
     </div>
 
+
+    <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <img src="assets/images/close-modal.svg" alt="">
+                </button>
+                <div class="modal-body">
+                    <div class="top-modal">
+                        <img src="assets/images/login.svg" alt="">
+                        <div class="modal-name">Войти в личный кабинет</div>
+                    </div>
+    
+                    <div class="form">
+                        <form method="post" action="">
+                            <div class="input">
+                                <input class="phone" name="" type="text" placeholder="Телефон">
+                            </div>
+                            <div class="input">
+                                <input class="pass" name="" type="text" placeholder="Пароль">
+                            </div>
+                            <div class="forgot_pass">Забыли пароль?</div>
+                            <button>Войти</button>
+                        </form>
+                        <div class="modal-text">
+                            Впервые у нас? <span>Зарегистрироваться</span>
+                        </div>
+                    </div>
+                </div>
+          </div>
+        </div>
+    </div>
+    <div class="modal fade" id="booking" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <img src="assets/images/close-modal.svg" alt="">
+                </button>
+                <div class="modal-body">
+                    <div class="booking-top">Бронирование стола</div>
+    
+                    <div class="form">
+                        <form method="post" action="">
+                            <div class="input">
+                                <input class="phone" name="" type="text" placeholder="Телефон">
+                            </div>
+                            <div class="input">
+                                <input class="pass" name="" type="text" placeholder="Пароль">
+                            </div>
+                            <div class="forgot_pass">Забыли пароль?</div>
+                            <button>Войти</button>
+                        </form>
+                        <div class="modal-text">
+                            Впервые у нас? <span>Зарегистрироваться</span>
+                        </div>
+                    </div>
+                </div>
+          </div>
+        </div>
+    </div>
     <!-- JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
