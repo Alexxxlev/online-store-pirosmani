@@ -432,6 +432,11 @@ header .navbar-light .navbar-nav .nav-item .nav-link:hover {
     color: #00AC4E;
 }
 
+header .navbar-light .navbar-nav .nav-item button {
+    border: none;
+    background: transparent;
+}
+
 header .dropdown-toggle::after {
     display: none;
 }
@@ -2011,6 +2016,12 @@ footer .footer_bottom a {
     position: absolute;
     top: 15px;
     right: 15px;
+}
+
+.modal-dialog .modal-content .close img {
+    position: inherit;
+    top: -5px;
+    right: -5px;
 }
 
 .modal-dialog .modal-content .top-modal {

@@ -182,6 +182,10 @@ textarea {
   margin-top: 45px;
 }
 
+.center {
+  text-align: center;
+}
+
 .green_btn {
   padding: 14px 38px;
   display: flex;
@@ -1654,10 +1658,48 @@ footer .footer_bottom a {
   box-shadow: 0px 0px 17.7465px rgba(0, 0, 0, 0.12);
   border-radius: 17.4636px;
 }
+.modal-dialog.modal-big {
+  max-width: 654px;
+  width: 654px;
+}
+.modal-dialog.modal-big .modal-content {
+  padding: 40px 56px 27px;
+}
+.modal-dialog.modal-big .modal-content .booking-top {
+  margin-bottom: 9px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 18px;
+  color: #000;
+  text-align: center;
+}
+.modal-dialog.modal-big .modal-content .form .input-block input {
+  margin: 8px 0;
+  padding-left: 17px;
+  font-size: 14px;
+}
+.modal-dialog.modal-big .modal-content .form .input-block input.center {
+  text-align: center;
+}
+.modal-dialog.modal-big .modal-content .form .input-block input.phone {
+  display: none;
+}
+.modal-dialog.modal-big .modal-content .form .input-block.d-flex input {
+  width: 254px;
+}
+.modal-dialog.modal-big .modal-content .form button {
+  margin: 17px auto 0;
+  height: 52px;
+  font-size: 17px;
+  line-height: 52px;
+}
 .modal-dialog .modal-content {
   padding: 30px 42px 34px;
   border: none;
   position: relative;
+}
+.modal-dialog .modal-content .modal-body {
+  padding: 0;
 }
 .modal-dialog .modal-content .close {
   width: 22px;
@@ -1685,7 +1727,7 @@ footer .footer_bottom a {
   line-height: 22px;
   color: #000;
 }
-.modal-dialog .modal-content .form .input input {
+.modal-dialog .modal-content .form .input-block input {
   margin: 14px 0;
   padding: 0 20px 0 49px;
   width: 100%;
@@ -1698,13 +1740,13 @@ footer .footer_bottom a {
   line-height: 50px;
   color: #000;
 }
-.modal-dialog .modal-content .form .input input ::placeholder {
+.modal-dialog .modal-content .form .input-block input ::placeholder {
   color: #C6C6C6;
 }
-.modal-dialog .modal-content .form .input input.phone {
+.modal-dialog .modal-content .form .input-block input.phone {
   background: url(../images/phone-modal.svg) no-repeat 18px center;
 }
-.modal-dialog .modal-content .form .input input.pass {
+.modal-dialog .modal-content .form .input-block input.pass {
   background: url(../images/key-modal.svg) no-repeat 18px center;
 }
 .modal-dialog .modal-content .form .forgot_pass {
@@ -1737,7 +1779,7 @@ footer .footer_bottom a {
   text-align: center;
   color: #000;
 }
-.modal-dialog .modal-content .form .modal-text span {
+.modal-dialog .modal-content .form .modal-text a {
   color: #00AC4E;
   cursor: pointer;
 }
