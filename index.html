@@ -71,7 +71,7 @@
                         </a>
                       </div>
                       <div class="menu-user">
-                        <button class="profile" data-toggle="modal" data-target="#login">
+                        <button class="profile" data-toggle="modal" data-target="#signin">
                           <img src="assets/images/person.svg" alt="">
                         </button>
                         <a href="#" class="cart">
@@ -591,7 +591,7 @@
     </div>
 
 
-    <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="signin" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -605,25 +605,54 @@
     
                     <div class="form">
                         <form method="post" action="">
-                            <div class="input">
+                            <div class="input-block">
                                 <input class="phone" name="" type="text" placeholder="Телефон">
                             </div>
-                            <div class="input">
+                            <div class="input-block">
                                 <input class="pass" name="" type="text" placeholder="Пароль">
                             </div>
                             <div class="forgot_pass">Забыли пароль?</div>
                             <button>Войти</button>
                         </form>
                         <div class="modal-text">
-                            Впервые у нас? <span>Зарегистрироваться</span>
+                            Впервые у нас? <span> <a href="#" data-toggle="modal" data-target="#signup">Зарегистрироваться</a></span>
                         </div>
                     </div>
                 </div>
           </div>
         </div>
     </div>
-    <div class="modal fade" id="booking" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="signup" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
+          <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <img src="assets/images/close-modal.svg" alt="">
+                </button>
+                <div class="modal-body">
+                    <div class="top-modal">
+                        <img src="assets/images/login.svg" alt="">
+                        <div class="modal-name">Регистрация</div>
+                    </div>
+    
+                    <div class="form">
+                        <form method="post" action="">
+                            <div class="input-block">
+                                <input class="phone" name="" type="text" placeholder="Телефон">
+                            </div>
+                            <div class="input-block">
+                                <input class="pass" name="" type="text" placeholder="Пароль">
+                            </div>
+                            <div class="input-block">
+                                <input class="pass" name="" type="text" placeholder="Подтвердите пароль">
+                            </div>
+                            <button>Зарегистрироваться</button>
+                        </form>
+                    </div>
+                </div>
+          </div>
+        </div>
+    </div>    <div class="modal fade" id="booking" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-big" role="document">
           <div class="modal-content">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <img src="assets/images/close-modal.svg" alt="">
@@ -633,18 +662,24 @@
     
                     <div class="form">
                         <form method="post" action="">
-                            <div class="input">
+                            <div class="input-block">
+                                <input class="name center" name="" type="text" placeholder="Имя">
+                            </div>
+                            <div class="input-block">
                                 <input class="phone" name="" type="text" placeholder="Телефон">
                             </div>
-                            <div class="input">
-                                <input class="pass" name="" type="text" placeholder="Пароль">
+    
+                            <div class="input-block d-flex justify-content-between">
+                                <input class="phone-numbers" name="" type="text" placeholder="+380">
+                                <input name="" type="text" placeholder="Количество человек">
                             </div>
-                            <div class="forgot_pass">Забыли пароль?</div>
-                            <button>Войти</button>
+    
+                            <div class="input-block d-flex justify-content-between">
+                                <input name="" type="text" placeholder="Время: _ _ : _ _">
+                                <input name="" type="date" placeholder="Дата:  дд.мм.гг">
+                            </div>
+                            <button>Забронировать</button>
                         </form>
-                        <div class="modal-text">
-                            Впервые у нас? <span>Зарегистрироваться</span>
-                        </div>
                     </div>
                 </div>
           </div>
