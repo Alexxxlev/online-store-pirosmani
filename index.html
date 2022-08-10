@@ -93,31 +93,31 @@
                 <div class="swiper-slide">
                   <h2>Подарок на первый заказ</h2>
                   <p>Получите 500 рублей за подписку на рассылку</p>
-                  <a href="#">Подписаться</a>
+                  <a href="#" data-toggle="modal" data-target="#subscribe">Подписаться</a>
                   <img src="assets/images/banner-1.png" alt="">
                 </div>
                 <div class="swiper-slide">
                   <h2>Подарок на первый заказ</h2>
                   <p>Получите 500 рублей за подписку на рассылку</p>
-                  <a href="#">Подписаться</a>
+                  <a href="#" data-toggle="modal" data-target="#subscribe">Подписаться</a>
                   <img src="assets/images/banner-1.png" alt="">
                 </div>
                 <div class="swiper-slide">
                   <h2>Подарок на первый заказ</h2>
                   <p>Получите 500 рублей за подписку на рассылку</p>
-                  <a href="#">Подписаться</a>
+                  <a href="#" data-toggle="modal" data-target="#subscribe">Подписаться</a>
                   <img src="assets/images/banner-1.png" alt="">
                 </div>
                 <div class="swiper-slide">
                   <h2>Подарок на первый заказ</h2>
                   <p>Получите 500 рублей за подписку на рассылку</p>
-                  <a href="#">Подписаться</a>
+                  <a href="#" data-toggle="modal" data-target="#subscribe">Подписаться</a>
                   <img src="assets/images/banner-1.png" alt="">
                 </div>
                 <div class="swiper-slide">
                   <h2>Подарок на первый заказ</h2>
                   <p>Получите 500 рублей за подписку на рассылку</p>
-                  <a href="#">Подписаться</a>
+                  <a href="#" data-toggle="modal" data-target="#subscribe">Подписаться</a>
                   <img src="assets/images/banner-1.png" alt="">
                 </div>
               </div>
@@ -624,7 +624,7 @@
     </div>
     <div class="modal fade" id="signup" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
-          <div class="modal-content">
+          <div class="modal-content pb23">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <img src="assets/images/close-modal.svg" alt="">
                 </button>
@@ -645,7 +645,45 @@
                             <div class="input-block">
                                 <input class="pass" name="" type="text" placeholder="Подтвердите пароль">
                             </div>
+                            <div class="error-text">Пользователь с таким номером телефона уже зарегистрирован.</div>
+                            <div class="cheak-block">
+                                <div class="line">
+                                    <input type="checkbox" id="r-mail">
+                                    <label for="r-mail">Хочу получать выгодные предложения от магазина</label>
+                                </div>
+                                <div class="line">
+                                    <input type="checkbox" checked id="r-politics">
+                                    <label for="r-politics">
+                                        Принимаю условия 
+                                        <a href="#">Пользовательского соглашения</a>, 
+                                        <a href="#">Политики конфиденциальности</a>
+                                    </label>
+                                </div>
+                            </div>
                             <button>Зарегистрироваться</button>
+                        </form>
+                    </div>
+                </div>
+          </div>
+        </div>
+    </div>    <div class="modal fade" id="subscribe" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <img src="assets/images/close-modal.svg" alt="">
+                </button>
+                <div class="modal-body">
+                    <div class="top-modal">
+                        <img src="assets/images/icon-mail.svg" alt="">
+                        <div class="modal-name">Подпишитесь на нашу рассылку и получите промокод на 500 RUB!</div>
+                    </div>
+    
+                    <div class="form">
+                        <form method="post" action="">
+                            <div class="input-block">
+                                <input class="email" name="" type="text" placeholder="E-mail">
+                            </div>
+                            <button>Отправить</button>
                         </form>
                     </div>
                 </div>
