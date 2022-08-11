@@ -18,70 +18,74 @@
 <body>
 
     <div class="wrapper">
+
+      <!-- <button data-toggle="modal" data-target="#check-phone">Подтвердите номер</button>
+      <button data-toggle="modal" data-target="#reviews">Добавить отзыв</button> -->
+
         <!-- header -->
         <header>
+          <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light">
-                <div class="container">
         
         
-                    <a class="navbar-brand" href="index.html">
-                        <img src="assets/images/logo.png" alt="">
-                    </a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                      <span class="navbar-toggler-icon"></span>
-                    </button>
+              <a class="navbar-brand" href="index.html">
+                  <img src="assets/images/logo.png" alt="">
+              </a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Меню
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#"><span><img src="assets/images/dropdown-menu/icon-1.svg" alt=""></span>Супы</a>
+                        <a class="dropdown-item" href="#"><span><img src="assets/images/dropdown-menu/icon-2.svg" alt=""></span>Хачапури</a>
+                        <a class="dropdown-item" href="#"><span><img src="assets/images/dropdown-menu/icon-3.svg" alt=""></span>Холодные закуски</a>
+                        <a class="dropdown-item" href="#"><span><img src="assets/images/dropdown-menu/icon-4.svg" alt=""></span>Хинкали</a>
+                        <a class="dropdown-item" href="#"><span><img src="assets/images/dropdown-menu/icon-5.svg" alt=""></span>Шашлык</a>
+                        <a class="dropdown-item" href="#"><span><img src="assets/images/dropdown-menu/icon-6.svg" alt=""></span>Соусы</a>
+                        <a class="dropdown-item" href="#"><span><img src="assets/images/dropdown-menu/icon-7.svg" alt=""></span>Салаты</a>
+                        <a class="dropdown-item" href="#"><span><img src="assets/images/dropdown-menu/icon-8.svg" alt=""></span>Горячие блюда</a>
+                        <a class="dropdown-item" href="#"><span><img src="assets/images/dropdown-menu/icon-9.svg" alt=""></span>Гарнир</a>
+                        <a class="dropdown-item" href="#"><span><img src="assets/images/dropdown-menu/icon-10.svg" alt=""></span>Десерты</a>
+                        <a class="dropdown-item" href="#"><span><img src="assets/images/dropdown-menu/icon-11.svg" alt=""></span>Напитки</a>
+                      </div>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="delivery.html">Доставка</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="payment.html">Оплата</a>
+                  </li>
+                  <li class="nav-item">
+                    <button class="nav-link" data-toggle="modal" data-target="#booking">Бронь стола</button>
+                  </li>
+                </ul> 
+              </div>
+        
+              <div class="menu-right d-flex justify-content-between">
+                <div class="menu-contact">
+                  <a href="tel:+78312826000">
+                    <img src="assets/images/phone.svg" alt="">
+                    <span>+7 (831) 282-60-00</span>
+                  </a>
+                </div>
+                <div class="menu-user">
+                  <button class="profile" data-toggle="modal" data-target="#signin">
+                    <img src="assets/images/person.svg" alt="">
+                  </button>
+                  <a href="#" class="cart">
+                    <img src="assets/images/cart.svg" alt="">
+                  </a>
+                </div>
+              </div>
                   
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                      <ul class="navbar-nav mr-auto">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                              Меню
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                              <a class="dropdown-item" href="#"><span><img src="assets/images/dropdown-menu/icon-1.svg" alt=""></span>Супы</a>
-                              <a class="dropdown-item" href="#"><span><img src="assets/images/dropdown-menu/icon-2.svg" alt=""></span>Хачапури</a>
-                              <a class="dropdown-item" href="#"><span><img src="assets/images/dropdown-menu/icon-3.svg" alt=""></span>Холодные закуски</a>
-                              <a class="dropdown-item" href="#"><span><img src="assets/images/dropdown-menu/icon-4.svg" alt=""></span>Хинкали</a>
-                              <a class="dropdown-item" href="#"><span><img src="assets/images/dropdown-menu/icon-5.svg" alt=""></span>Шашлык</a>
-                              <a class="dropdown-item" href="#"><span><img src="assets/images/dropdown-menu/icon-6.svg" alt=""></span>Соусы</a>
-                              <a class="dropdown-item" href="#"><span><img src="assets/images/dropdown-menu/icon-7.svg" alt=""></span>Салаты</a>
-                              <a class="dropdown-item" href="#"><span><img src="assets/images/dropdown-menu/icon-8.svg" alt=""></span>Горячие блюда</a>
-                              <a class="dropdown-item" href="#"><span><img src="assets/images/dropdown-menu/icon-9.svg" alt=""></span>Гарнир</a>
-                              <a class="dropdown-item" href="#"><span><img src="assets/images/dropdown-menu/icon-10.svg" alt=""></span>Десерты</a>
-                              <a class="dropdown-item" href="#"><span><img src="assets/images/dropdown-menu/icon-11.svg" alt=""></span>Напитки</a>
-                            </div>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="delivery.html">Доставка</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="payment.html">Оплата</a>
-                        </li>
-                        <li class="nav-item">
-                          <button class="nav-link" data-toggle="modal" data-target="#booking">Бронь стола</button>
-                        </li>
-                      </ul> 
-                    </div>
-        
-                    <div class="menu-right d-flex justify-content-between">
-                      <div class="menu-contact">
-                        <a href="tel:+78312826000">
-                          <img src="assets/images/phone.svg" alt="">
-                          <span>+7 (831) 282-60-00</span>
-                        </a>
-                      </div>
-                      <div class="menu-user">
-                        <button class="profile" data-toggle="modal" data-target="#signin">
-                          <img src="assets/images/person.svg" alt="">
-                        </button>
-                        <a href="#" class="cart">
-                          <img src="assets/images/cart.svg" alt="">
-                        </a>
-                      </div>
-                    </div>
-                    
-                </div><!-- /.container -->
             </nav><!-- /.navbar -->
+          </div><!-- /.container -->
         </header>
         <!-- main -->
         
@@ -164,11 +168,11 @@
                             <div class="input-block">
                                 <input class="pass" name="" type="text" placeholder="Пароль">
                             </div>
-                            <div class="forgot_pass">Забыли пароль?</div>
-                            <button>Войти</button>
+                            <button class="forgot_pass" type="button" data-toggle="modal" data-target="#pass-recovery">Забыли пароль?</button>
+                            <button type="button">Войти</button>
                         </form>
                         <div class="modal-text">
-                            Впервые у нас? <span> <a href="#" data-toggle="modal" data-target="#signup">Зарегистрироваться</a></span>
+                            Впервые у нас? <span><button href="#" data-toggle="modal" data-target="#signup">Зарегистрироваться</button></span>
                         </div>
                     </div>
                 </div>
@@ -219,6 +223,38 @@
                 </div>
           </div>
         </div>
+    </div>    <div class="modal fade" id="pass-recovery" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content pb23">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <img src="assets/images/close-modal.svg" alt="">
+                </button>
+                <div class="modal-body">
+                    <div class="top-modal">
+                        <img src="assets/images/login.svg" alt="">
+                        <div class="modal-name">Восстановление пароля</div>
+                    </div>
+    
+                    <div class="form">
+                        <form method="post" action="">
+                            <div class="input-block">
+                                <input class="phone" name="" type="text" placeholder="Введите телефон">
+                            </div>
+                            <div class="input-block">
+                                <input class="pass" name="" type="text" placeholder="Новый пароль (мин. 6 символов)">
+                            </div>
+                            <div class="input-block">
+                                <input class="pass" name="" type="text" placeholder="Подтвердите пароль">
+                            </div>
+                            <div class="btn-block-2">
+                                <button class="decline" data-dismiss="modal" aria-label="Close">Отменить</button>
+                                <button>Обновить пароль</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+          </div>
+        </div>
     </div>    <div class="modal fade" id="subscribe" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
@@ -237,6 +273,40 @@
                                 <input class="email" name="" type="text" placeholder="E-mail">
                             </div>
                             <button>Отправить</button>
+                        </form>
+                    </div>
+                </div>
+          </div>
+        </div>
+    </div>    <div class="modal fade" id="check-phone" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content pb23">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <img src="assets/images/close-modal.svg" alt="">
+                </button>
+                <div class="modal-body">
+                    <div class="top-modal">
+                        <img src="assets/images/login.svg" alt="">
+                        <div class="modal-name">Подтвердите номер телефона</div>
+                    </div>
+    
+                    <div class="form">
+                        <form method="post" action="">
+                            <div class="input-block digit">
+                                <input name="" type="text" maxlength="1">
+                                <span></span>
+                                <input name="" type="text" maxlength="1">
+                                <span></span>
+                                <input name="" type="text" maxlength="1">
+                                <span></span>
+                                <input name="" type="text" maxlength="1">
+                            </div>
+                            <div class="send-check active">
+                                <!-- Смена состояний при добавлении класса active к send-check -->
+                                <span>Отправить повторно</span>
+                                <b>1:59</b>
+                                <button>Далее</button>
+                            </div>
                         </form>
                     </div>
                 </div>
@@ -270,6 +340,41 @@
                                 <input name="" type="date" placeholder="Дата:  дд.мм.гг">
                             </div>
                             <button>Забронировать</button>
+                        </form>
+                    </div>
+                </div>
+          </div>
+        </div>
+    </div>    <div class="modal fade" id="reviews" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog reviews" role="document">
+          <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <img src="assets/images/close-modal.svg" alt="">
+                </button>
+                <div class="modal-body">
+                    <div class="reviews-top">Добавить отзыв</div>
+    
+                    <div class="form">
+                        <form method="post" action="">
+                            <div class="line-reviews">
+                                <b>Ваша оценка:</b>
+                                <div class="rating">
+                                    <span class="active"></span>
+                                    <span class="active"></span>
+                                    <span class="active"></span>
+                                    <span class="active"></span>
+                                    <span class="active"></span>
+                                </div>
+                            </div>
+                            <div class="input-block line-reviews">
+                                <b>Ваше имя:</b>
+                                <input class="" name="" type="text" placeholder="Введите Ваше имя">
+                            </div>
+                            <div class="input-block line-reviews">
+                                <b>Ваш отзыв:</b>
+                                <textarea name=""></textarea>
+                            </div>
+                            <button>Добавить отзыв</button>
                         </form>
                     </div>
                 </div>
