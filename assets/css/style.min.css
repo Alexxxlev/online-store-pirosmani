@@ -396,13 +396,32 @@ header .dropdown-menu {
   top: -17px;
   z-index: 1000;
 }
+@media (max-width: 767px) {
+  header .dropdown-menu {
+    padding: 12px 0 0;
+    background: #343E48;
+    box-shadow: none;
+  }
+}
 header .dropdown-menu .dropdown-item {
   padding: 9px 20px 9px 26px;
   display: flex;
   align-items: center;
+  font-family: "TT Hoves";
   font-size: 13px;
   line-height: 13px;
   color: #333;
+}
+@media (max-width: 767px) {
+  header .dropdown-menu .dropdown-item {
+    font-family: "TT Hoves";
+    font-size: 14px;
+    line-height: 14px;
+    color: #F2F2F2;
+  }
+  header .dropdown-menu .dropdown-item svg path {
+    fill: #fff !important;
+  }
 }
 header .dropdown-menu .dropdown-item span {
   margin-right: 8px;
@@ -413,7 +432,7 @@ header .dropdown-menu .dropdown-item span {
 @media (max-width: 767px) {
   header .navbar-collapse {
     padding-top: 50px;
-    width: 70%;
+    width: 250px;
     height: 100vh;
     overflow: hidden;
     background: #343E48;
@@ -428,10 +447,14 @@ header .dropdown-menu .dropdown-item span {
     width: 100%;
     height: 50px;
     background: #fff;
+    border-radius: 0 8px 8px 8px;
     position: absolute;
     top: 0;
     left: 0;
   }
+}
+header .navbar-light .navbar-nav .nav-item.show .nav-link::before {
+  transform: rotate(90deg);
 }
 header .navbar-light .navbar-nav .nav-item.active .nav-link {
   color: #00AC4E;
@@ -449,12 +472,39 @@ header .navbar-light .navbar-nav .nav-item .nav-link {
   color: #333333;
   transition: color 0.2s linear;
 }
+@media (max-width: 767px) {
+  header .navbar-light .navbar-nav .nav-item .nav-link {
+    margin-top: 25px;
+    padding: 0 21px 0 53px;
+    font-family: "TT Hoves";
+    font-size: 16px;
+    line-height: 16px;
+    color: #fff;
+    position: relative;
+  }
+  header .navbar-light .navbar-nav .nav-item .nav-link::before {
+    content: "";
+    width: 6px;
+    height: 10px;
+    background: url(../images/burger-arrow.svg) 90% center no-repeat;
+    position: absolute;
+    top: 0;
+    right: 21px;
+    transition: transform 0.2s linear;
+  }
+}
 header .navbar-light .navbar-nav .nav-item .nav-link:hover {
   color: #00AC4E;
 }
 header .navbar-light .navbar-nav .nav-item button {
   border: none;
   background: transparent;
+}
+@media (max-width: 767px) {
+  header .navbar-light .navbar-nav .nav-item button {
+    width: 100%;
+    text-align: left;
+  }
 }
 header .dropdown-toggle::after {
   display: none;
@@ -507,6 +557,11 @@ header .menu-right .menu-user a {
     margin-left: 0;
     width: 20px;
   }
+  header .menu-right .menu-user button img,
+header .menu-right .menu-user a img {
+    width: 20px;
+    height: 20px;
+  }
 }
 header .menu-right .menu-user button {
   padding: 0;
@@ -516,12 +571,35 @@ header .menu-right .menu-user button {
 header .menu-right .menu-user .profile {
   margin: 0 20px;
 }
+@media (max-width: 767px) {
+  header .menu-right .menu-user .profile {
+    margin: 0 15px;
+  }
+}
 
 .home-banner {
   padding-top: 60px;
   padding-bottom: 25px;
   position: relative;
   z-index: 0;
+}
+.home-banner .book-table {
+  margin-bottom: 5px;
+  width: 100%;
+  height: 25px;
+  background: #00AC4E;
+  border: none;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #fff;
+  text-align: center;
+}
+.home-banner .book-table img {
+  margin-left: 4px;
+  width: 14px;
+  height: 12px;
 }
 .home-banner .swiper {
   width: 100%;
@@ -707,6 +785,9 @@ header .menu-right .menu-user .profile {
 }
 .home-products .pagination-block ul {
   margin-bottom: 0;
+}
+.home-products .pagination-block ul li {
+  z-index: 1;
 }
 .home-products .pagination-block ul li a {
   display: flex;

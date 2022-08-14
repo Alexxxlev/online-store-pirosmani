@@ -379,12 +379,66 @@ header {
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.12);
 }
 
-header nav {
+@media (max-width: 767px) {
+    header {
+        position: fixed;
+        z-index: 2;
+    }
+}
+
+header nav.navbar {
     height: 100px;
 }
 
-header nav .navbar-brand {
+@media (max-width: 767px) {
+    header nav.navbar {
+        padding: 0;
+        height: 50px;
+        position: static;
+    }
+}
+
+header nav.navbar .navbar-brand {
     margin-right: 37.5px;
+}
+
+@media (max-width: 767px) {
+    header nav.navbar .navbar-brand {
+        margin-right: 0;
+        -ms-flex-order: 2;
+        order: 2;
+        z-index: 3;
+    }
+}
+
+@media (max-width: 767px) {
+    header nav.navbar .navbar-brand img {
+        height: 24px;
+    }
+}
+
+@media (max-width: 767px) {
+    header nav.navbar .navbar-toggler {
+        padding: 0;
+        -ms-flex-order: 1;
+        order: 1;
+        border: 0;
+        position: relative;
+        z-index: 3;
+    }
+
+    header nav.navbar .navbar-toggler:focus {
+        box-shadow: none;
+    }
+}
+
+@media (max-width: 767px) {
+    header nav.navbar .navbar-toggler span {
+        width: 23px;
+        height: 13px;
+        background: url(../images/burger-menu.svg) no-repeat center;
+        background-size: contain;
+    }
 }
 
 header .dropdown-menu {
@@ -415,6 +469,31 @@ header .dropdown-menu .dropdown-item span {
     display: inline-block;
     width: 20px;
     text-align: center;
+}
+
+@media (max-width: 767px) {
+    header .navbar-collapse {
+        padding-top: 50px;
+        width: 70%;
+        height: 100vh;
+        overflow: hidden;
+        background: #343E48;
+        border-radius: 0 8px 8px 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 2;
+    }
+
+    header .navbar-collapse::before {
+        content: "";
+        width: 100%;
+        height: 50px;
+        background: #fff;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
 }
 
 header .navbar-light .navbar-nav .nav-item.active .nav-link {
@@ -454,8 +533,22 @@ header .menu-right {
     align-items: center;
 }
 
+@media (max-width: 767px) {
+    header .menu-right {
+        -ms-flex-order: 3;
+        order: 3;
+        z-index: 3;
+    }
+}
+
 header .menu-right .menu-contact {
     margin-right: 35px;
+}
+
+@media (max-width: 767px) {
+    header .menu-right .menu-contact {
+        margin-right: 0;
+    }
 }
 
 header .menu-right .menu-contact a {
@@ -470,15 +563,40 @@ header .menu-right .menu-contact a img {
     margin-right: 5px;
 }
 
+@media (max-width: 767px) {
+    header .menu-right .menu-contact a img {
+        margin-right: 0;
+        width: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    header .menu-right .menu-contact a span {
+        display: none;
+    }
+}
+
 header .menu-right .menu-user button,
 header .menu-right .menu-user a {
     margin-left: 30px;
+}
+
+@media (max-width: 767px) {
+    header .menu-right .menu-user button,
+header .menu-right .menu-user a {
+        margin-left: 0;
+        width: 20px;
+    }
 }
 
 header .menu-right .menu-user button {
     padding: 0;
     background: none;
     border: none;
+}
+
+header .menu-right .menu-user .profile {
+    margin: 0 20px;
 }
 
 .home-banner {
@@ -2062,6 +2180,13 @@ footer .footer_bottom a {
     padding: 0;
 }
 
+.modal-dialog .modal-content .modal-body .reviews-top {
+    margin-bottom: 16px;
+    font-size: 20px;
+    line-height: 29px;
+    color: #000;
+}
+
 .modal-dialog .modal-content .close {
     width: 22px;
     height: 22px;
@@ -2090,6 +2215,63 @@ footer .footer_bottom a {
     font-size: 17.4636px;
     line-height: 22px;
     color: #000;
+}
+
+.modal-dialog .modal-content .form .line-reviews {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.modal-dialog .modal-content .form .line-reviews:last-of-type {
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+
+.modal-dialog .modal-content .form .line-reviews:last-of-type b {
+    width: 92px;
+}
+
+.modal-dialog .modal-content .form .line-reviews .rating {
+    margin-bottom: 0;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.modal-dialog .modal-content .form .line-reviews .rating span {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background: url(../images/star.svg);
+}
+
+.modal-dialog .modal-content .form .line-reviews .rating span.active {
+    background: url(../images/star-green.svg);
+}
+
+.modal-dialog .modal-content .form .line-reviews b {
+    width: 80px;
+    font-size: 10.5px;
+    line-height: 12px;
+    color: #000;
+}
+
+.modal-dialog .modal-content .form .line-reviews input {
+    margin: 18px 0 !important;
+    padding-left: 17px !important;
+    width: 177px !important;
+    height: 33px !important;
+    line-height: 33px !important;
+}
+
+.modal-dialog .modal-content .form .line-reviews textarea {
+    margin-bottom: 5px;
+    padding-left: 17px;
+    width: 244px;
+    height: 98px;
+    border: 1px solid #EBEBEB;
+    resize: none;
 }
 
 .modal-dialog .modal-content .form .input-block input {
@@ -2136,6 +2318,91 @@ footer .footer_bottom a {
 
 .modal-dialog .modal-content .form .input-block input.email {
     background: url(../images/email-input.svg) no-repeat 18px center;
+}
+
+.modal-dialog .modal-content .form .input-block.digit {
+    margin: 0 auto;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 200px;
+}
+
+.modal-dialog .modal-content .form .input-block.digit input {
+    padding: 0;
+    width: 33px;
+    height: 47px;
+    background: #FCFCFC;
+    border: 1px solid #EBEBEB;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 16px;
+    color: #000;
+    text-align: center;
+}
+
+.modal-dialog .modal-content .form .input-block.digit span {
+    margin: 0 6px;
+    width: 7px;
+    height: 1px;
+    background: #343E48;
+}
+
+.modal-dialog .modal-content .form .btn-block-2 {
+    margin-top: 16px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.modal-dialog .modal-content .form .btn-block-2 .decline {
+    background: transparent;
+    color: #00AC4E;
+}
+
+.modal-dialog .modal-content .form .send-check {
+    text-align: center;
+}
+
+.modal-dialog .modal-content .form .send-check.active span {
+    color: #00AC4E;
+}
+
+.modal-dialog .modal-content .form .send-check.active b {
+    display: none;
+}
+
+.modal-dialog .modal-content .form .send-check.active button {
+    background: #00AC4E;
+}
+
+.modal-dialog .modal-content .form .send-check span {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    -webkit-text-decoration-line: underline;
+    text-decoration-line: underline;
+    color: #BDBDBD;
+}
+
+.modal-dialog .modal-content .form .send-check b {
+    margin-left: 10px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    color: #000;
+}
+
+.modal-dialog .modal-content .form .send-check button {
+    margin-top: 30px;
+    background: #E0E0E0;
 }
 
 .modal-dialog .modal-content .form .error-text {
@@ -2196,9 +2463,13 @@ footer .footer_bottom a {
 }
 
 .modal-dialog .modal-content .form .forgot_pass {
+    margin: 0 auto;
+    padding: 0;
     font-size: 14.1972px;
-    line-height: 17px;
+    height: auto;
+    line-height: 1.3;
     color: #00AC4E;
+    background: transparent;
     -webkit-text-decoration-line: underline;
     text-decoration-line: underline;
     text-align: center;
@@ -2222,14 +2493,36 @@ footer .footer_bottom a {
 }
 
 .modal-dialog .modal-content .form .modal-text {
-    margin-top: 12px;
+    margin-top: 20px;
     font-size: 12.2245px;
     line-height: 18px;
     text-align: center;
     color: #000;
 }
 
-.modal-dialog .modal-content .form .modal-text a {
+.modal-dialog .modal-content .form .modal-text button {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    height: auto;
+    line-height: 1.3;
     color: #00AC4E;
+    background: transparent;
     cursor: pointer;
+}
+
+@media (max-width: 767px) {
+    .container {
+        min-width: 320px;
+    }
+
+    header {
+        width: 100%;
+    }
+
+    section,
+footer {
+        width: 100%;
+        overflow-x: hidden;
+    }
 }
