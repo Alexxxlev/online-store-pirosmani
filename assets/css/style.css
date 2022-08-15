@@ -453,15 +453,37 @@ header .dropdown-menu {
     z-index: 1000;
 }
 
+@media (max-width: 767px) {
+    header .dropdown-menu {
+        padding: 12px 0 0;
+        background: #343E48;
+        box-shadow: none;
+    }
+}
+
 header .dropdown-menu .dropdown-item {
     padding: 9px 20px 9px 26px;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-align: center;
     align-items: center;
+    font-family: "TT Hoves";
     font-size: 13px;
     line-height: 13px;
     color: #333;
+}
+
+@media (max-width: 767px) {
+    header .dropdown-menu .dropdown-item {
+        font-family: "TT Hoves";
+        font-size: 14px;
+        line-height: 14px;
+        color: #F2F2F2;
+    }
+
+    header .dropdown-menu .dropdown-item svg path {
+        fill: #fff !important;
+    }
 }
 
 header .dropdown-menu .dropdown-item span {
@@ -474,7 +496,7 @@ header .dropdown-menu .dropdown-item span {
 @media (max-width: 767px) {
     header .navbar-collapse {
         padding-top: 50px;
-        width: 70%;
+        width: 250px;
         height: 100vh;
         overflow: hidden;
         background: #343E48;
@@ -490,10 +512,16 @@ header .dropdown-menu .dropdown-item span {
         width: 100%;
         height: 50px;
         background: #fff;
+        border-radius: 0 8px 8px 8px;
         position: absolute;
         top: 0;
         left: 0;
     }
+}
+
+header .navbar-light .navbar-nav .nav-item.show .nav-link::before {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
 }
 
 header .navbar-light .navbar-nav .nav-item.active .nav-link {
@@ -515,6 +543,31 @@ header .navbar-light .navbar-nav .nav-item .nav-link {
     transition: color 0.2s linear;
 }
 
+@media (max-width: 767px) {
+    header .navbar-light .navbar-nav .nav-item .nav-link {
+        margin-top: 25px;
+        padding: 0 21px 0 53px;
+        font-family: "TT Hoves";
+        font-size: 16px;
+        line-height: 16px;
+        color: #fff;
+        position: relative;
+    }
+
+    header .navbar-light .navbar-nav .nav-item .nav-link::before {
+        content: "";
+        width: 6px;
+        height: 10px;
+        background: url(../images/burger-arrow.svg) 90% center no-repeat;
+        position: absolute;
+        top: 0;
+        right: 21px;
+        transition: -webkit-transform 0.2s linear;
+        transition: transform 0.2s linear;
+        transition: transform 0.2s linear, -webkit-transform 0.2s linear;
+    }
+}
+
 header .navbar-light .navbar-nav .nav-item .nav-link:hover {
     color: #00AC4E;
 }
@@ -522,6 +575,13 @@ header .navbar-light .navbar-nav .nav-item .nav-link:hover {
 header .navbar-light .navbar-nav .nav-item button {
     border: none;
     background: transparent;
+}
+
+@media (max-width: 767px) {
+    header .navbar-light .navbar-nav .nav-item button {
+        width: 100%;
+        text-align: left;
+    }
 }
 
 header .dropdown-toggle::after {
@@ -587,6 +647,12 @@ header .menu-right .menu-user a {
         margin-left: 0;
         width: 20px;
     }
+
+    header .menu-right .menu-user button img,
+header .menu-right .menu-user a img {
+        width: 20px;
+        height: 20px;
+    }
 }
 
 header .menu-right .menu-user button {
@@ -599,6 +665,12 @@ header .menu-right .menu-user .profile {
     margin: 0 20px;
 }
 
+@media (max-width: 767px) {
+    header .menu-right .menu-user .profile {
+        margin: 0 15px;
+    }
+}
+
 .home-banner {
     padding-top: 60px;
     padding-bottom: 25px;
@@ -606,8 +678,40 @@ header .menu-right .menu-user .profile {
     z-index: 0;
 }
 
+@media (max-width: 767px) {
+    .home-banner {
+        padding-bottom: 12px;
+    }
+}
+
+.home-banner .book-table {
+    margin-bottom: 5px;
+    width: 100%;
+    height: 25px;
+    background: #00AC4E;
+    border: none;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #fff;
+    text-align: center;
+}
+
+.home-banner .book-table img {
+    margin-left: 4px;
+    width: 14px;
+    height: 12px;
+}
+
 .home-banner .swiper {
     width: 100%;
+}
+
+@media (max-width: 767px) {
+    .home-banner .swiper {
+        height: 120px;
+    }
 }
 
 .home-banner .swiper-slide {
@@ -621,19 +725,39 @@ header .menu-right .menu-user .profile {
     position: relative;
 }
 
+@media (max-width: 767px) {
+    .home-banner .swiper-slide {
+        padding: 18px 175px 18px 12px;
+        height: 120px;
+        border-radius: 8px;
+    }
+}
+
 .home-banner .swiper-slide img {
     position: absolute;
     top: 0;
     right: 0;
 }
 
+@media (max-width: 767px) {
+    .home-banner .swiper-slide img {
+        width: 50%;
+        height: 100%;
+    }
+}
+
 .home-banner .swiper-slide h2 {
     margin-bottom: 10px;
-    font-style: normal;
-    font-weight: 400;
     font-size: 31.6273px;
     line-height: 38px;
     color: #333333;
+}
+
+@media (max-width: 767px) {
+    .home-banner .swiper-slide h2 {
+        font-size: 12px;
+        line-height: 12px;
+    }
 }
 
 .home-banner .swiper-slide p {
@@ -642,6 +766,14 @@ header .menu-right .menu-user .profile {
     font-size: 19.88px;
     line-height: 24px;
     color: #828282;
+}
+
+@media (max-width: 767px) {
+    .home-banner .swiper-slide p {
+        margin-bottom: 10px;
+        font-size: 11px;
+        line-height: 10px;
+    }
 }
 
 .home-banner .swiper-slide a {
@@ -656,6 +788,35 @@ header .menu-right .menu-user .profile {
     background: #00AC4E;
     border-radius: 5px;
     text-decoration: none;
+}
+
+@media (max-width: 767px) {
+    .home-banner .swiper-slide a {
+        padding: 4px 11px;
+        display: inline;
+        width: 81px;
+        height: 20px;
+        font-size: 11px;
+        line-height: 20px;
+        text-align: end;
+    }
+}
+
+@media (max-width: 767px) {
+    .home-banner .swiper-pagination {
+        bottom: 5px;
+    }
+}
+
+@media (max-width: 767px) {
+    .home-banner .swiper-pagination .swiper-pagination-bullet {
+        width: 6px;
+        height: 6px;
+    }
+
+    .home-banner .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+        width: 30px !important;
+    }
 }
 
 .home-menu {
@@ -825,6 +986,10 @@ header .menu-right .menu-user .profile {
 
 .home-products .pagination-block ul {
     margin-bottom: 0;
+}
+
+.home-products .pagination-block ul li {
+    z-index: 1;
 }
 
 .home-products .pagination-block ul li a {
