@@ -727,7 +727,7 @@ header .menu-right .menu-user .profile {
 
 @media (max-width: 767px) {
     .home-banner .swiper-slide {
-        padding: 18px 175px 18px 12px;
+        padding: 18px 144px 18px 12px;
         height: 120px;
         border-radius: 8px;
     }
@@ -741,7 +741,7 @@ header .menu-right .menu-user .profile {
 
 @media (max-width: 767px) {
     .home-banner .swiper-slide img {
-        width: 50%;
+        width: 47%;
         height: 100%;
     }
 }
@@ -829,16 +829,30 @@ header .menu-right .menu-user .profile {
     left: -16px;
 }
 
+@media (max-width: 767px) {
+    .home-menu .swiper {
+        left: 0;
+    }
+}
+
 .home-menu .swiper a {
     padding: 8px 16px;
     width: auto !important;
     font-family: "TT Hoves";
     font-weight: 400;
-    font-size: 23.3333px;
+    font-size: 23px;
     line-height: 27px;
     color: #4F4F4F;
     text-decoration: none;
     text-transform: uppercase;
+}
+
+@media (max-width: 767px) {
+    .home-menu .swiper a {
+        margin-right: 35px !important;
+        font-size: 14px;
+        line-height: 12px;
+    }
 }
 
 .home-menu .swiper a.active {
@@ -863,6 +877,13 @@ header .menu-right .menu-user .profile {
     -ms-flex-pack: end;
     justify-content: flex-end;
     background: #fff;
+}
+
+@media (max-width: 767px) {
+    .home-menu .swiper-button-next,
+.home-menu .swiper-rtl .swiper-button-prev {
+        display: none;
+    }
 }
 
 .home-menu .swiper-button-next:after,
@@ -892,6 +913,14 @@ header .menu-right .menu-user .profile {
     color: #000;
 }
 
+@media (max-width: 767px) {
+    .home-products .all_products {
+        margin-bottom: 15px;
+        font-size: 20px;
+        line-height: 15px;
+    }
+}
+
 .home-products .products-wrapper {
     display: -ms-flexbox;
     display: flex;
@@ -907,6 +936,13 @@ header .menu-right .menu-user .profile {
     width: 17%;
 }
 
+@media (max-width: 767px) {
+    .home-products .products-wrapper .product {
+        margin-bottom: 12px;
+        width: 47%;
+    }
+}
+
 .home-products .products-wrapper .product .img {
     margin-bottom: 10px;
     display: -ms-flexbox;
@@ -915,7 +951,14 @@ header .menu-right .menu-user .profile {
     height: 125px;
     overflow: hidden;
     background: #E6E6E6 url(../images/product-bg.png) center no-repeat;
-    border-radius: 4.52641px;
+    border-radius: 4px;
+}
+
+@media (max-width: 767px) {
+    .home-products .products-wrapper .product .img {
+        background-size: 60px;
+        border-radius: 6px;
+    }
 }
 
 .home-products .products-wrapper .product .img img {
@@ -927,7 +970,7 @@ header .menu-right .menu-user .profile {
     margin-bottom: 3px;
     display: block;
     font-weight: 500;
-    font-size: 14.4845px;
+    font-size: 14px;
     line-height: 22px;
     color: #000000;
     text-decoration: none;
@@ -939,6 +982,13 @@ header .menu-right .menu-user .profile {
     font-size: 13px;
     line-height: 19px;
     color: #000000;
+}
+
+@media (max-width: 767px) {
+    .home-products .products-wrapper .product .description {
+        font-size: 12px;
+        line-height: 13px;
+    }
 }
 
 .home-products .products-wrapper .product .price {
@@ -2678,6 +2728,7 @@ footer .footer_bottom a {
 
 @media (max-width: 767px) {
     .container {
+        padding: 0 30px;
         min-width: 320px;
     }
 
