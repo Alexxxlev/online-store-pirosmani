@@ -1439,10 +1439,20 @@ footer .footer_bottom a {
   background-color: inherit;
   border: none;
 }
+@media (max-width: 767px) {
+  .card {
+    padding: 85px 0 25px;
+  }
+}
 
 .card-top {
   display: flex;
   justify-content: space-between;
+}
+@media (max-width: 767px) {
+  .card-top {
+    flex-direction: column;
+  }
 }
 .card-top .card-img {
   width: 67%;
@@ -1450,6 +1460,15 @@ footer .footer_bottom a {
   overflow: hidden;
   background: #F9F9F9 url(../images/card-bg.png) center no-repeat;
   border-radius: 15px;
+}
+@media (max-width: 767px) {
+  .card-top .card-img {
+    margin-bottom: 10px;
+    width: 100%;
+    height: 210px;
+    background-size: 110px;
+    border-radius: 20px;
+  }
 }
 .card-top .card-img img {
   width: 100%;
@@ -1465,6 +1484,13 @@ footer .footer_bottom a {
   box-shadow: 0px 0px 27.1091px rgba(0, 0, 0, 0.06);
   border-radius: 15px;
 }
+@media (max-width: 767px) {
+  .card-top .card-sidebar {
+    padding: 20px;
+    width: 100%;
+    border-radius: 12px;
+  }
+}
 .card-top .card-sidebar .title {
   margin-bottom: 6px;
   font-weight: 500;
@@ -1479,11 +1505,21 @@ footer .footer_bottom a {
   line-height: 19px;
   color: #C6C6C6;
 }
+@media (max-width: 767px) {
+  .card-top .card-sidebar .reviews {
+    margin-bottom: 15px;
+  }
+}
 .card-top .card-sidebar .price {
   margin-bottom: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+@media (max-width: 767px) {
+  .card-top .card-sidebar .price {
+    margin-bottom: 15px;
+  }
 }
 .card-top .card-sidebar .price span {
   font-weight: 500;
@@ -1500,10 +1536,20 @@ footer .footer_bottom a {
 .card-top .card-sidebar .pay-bottom {
   margin-top: 30px;
 }
+@media (max-width: 767px) {
+  .card-top .card-sidebar .pay-bottom {
+    margin-top: 15px;
+  }
+}
 .card-top .card-sidebar .pay-bottom .to-pay {
   margin-bottom: 18px;
   display: flex;
   justify-content: space-between;
+}
+@media (max-width: 767px) {
+  .card-top .card-sidebar .pay-bottom .to-pay {
+    margin-bottom: 10px;
+  }
 }
 .card-top .card-sidebar .pay-bottom .to-pay span {
   font-weight: 500;
@@ -1549,14 +1595,30 @@ footer .footer_bottom a {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 767px) {
+  .card-bottom {
+    margin-top: 15px;
+    flex-direction: column;
+  }
+}
 .card-bottom .card-info {
   width: 67%;
+}
+@media (max-width: 767px) {
+  .card-bottom .card-info {
+    width: 100%;
+  }
 }
 .card-bottom .card-info .nav-tabs {
   margin-bottom: 45px;
   display: flex;
   justify-content: space-between;
   border: none;
+}
+@media (max-width: 767px) {
+  .card-bottom .card-info .nav-tabs {
+    margin-bottom: 25px;
+  }
 }
 .card-bottom .card-info .nav-tabs .nav-link {
   padding: 0 35px 0 0;
@@ -1566,6 +1628,13 @@ footer .footer_bottom a {
   color: #828282;
   border: none;
 }
+@media (max-width: 767px) {
+  .card-bottom .card-info .nav-tabs .nav-link {
+    padding: 0;
+    font-size: 18px;
+    line-height: 10px;
+  }
+}
 .card-bottom .card-info .nav-tabs .nav-link.active {
   font-weight: 500;
   color: #00AC4E;
@@ -1574,19 +1643,38 @@ footer .footer_bottom a {
   padding: 0;
   position: relative;
 }
+@media (max-width: 767px) {
+  .card-bottom .card-info .tab-content > .tab-pane.container {
+    min-width: 298px;
+  }
+}
 .card-bottom .card-info .tab-content h2.tab {
   margin-bottom: 22px;
   font-weight: 500;
-  font-size: 21.6479px;
+  font-size: 21px;
   line-height: 19px;
   color: #000;
+}
+@media (max-width: 767px) {
+  .card-bottom .card-info .tab-content h2.tab {
+    margin-bottom: 12px;
+    font-size: 16px;
+    line-height: 15px;
+  }
 }
 .card-bottom .card-info .tab-content p {
   padding-right: 35px;
   font-weight: 400;
-  font-size: 18.0399px;
+  font-size: 18px;
   line-height: 19px;
   color: #828282;
+}
+@media (max-width: 767px) {
+  .card-bottom .card-info .tab-content p {
+    padding-right: 0;
+    font-size: 14px;
+    line-height: 16px;
+  }
 }
 .card-bottom .card-info .tab-content .product_ul {
   padding: 0;
@@ -1607,6 +1695,13 @@ footer .footer_bottom a {
   background: #fff;
   box-shadow: 0px 0px 27.1091px rgba(0, 0, 0, 0.06);
   border-radius: 15px;
+}
+@media (max-width: 767px) {
+  .card-bottom .card-sidebar {
+    padding: 20px;
+    width: 100%;
+    border-radius: 13px;
+  }
 }
 .card-bottom .card-sidebar .purchase-info .title {
   margin-bottom: 15px;
